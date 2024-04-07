@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "d46eef1c-44b2-4efb-af7a-243e6474cc1e",
+		"name": "REST APIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25228211"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "all-customer-details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/all-customer-details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"all-customer-details"
+							]
+						},
+						"description": "<u><b>API STRUCRUE :</b></u>\n\nhttp://localhost:8080/all-customer-details"
+					},
+					"response": []
+				},
+				{
+					"name": "register-customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"admin\",\n    \"lastName\": \"admin\",\n    \"password\": \"admin\",\n    \"phoneNo\": \"12345\",\n    \"mail\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/register-customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"register-customer"
+							]
+						},
+						"description": "<u><b>API STRUCRUE :</b></u>\n\n[http://localhost:8080/register-customer](http://localhost:8080/register-customer)"
+					},
+					"response": []
+				},
+				{
+					"name": "customer login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"mail\": \"admin\",\n    \"password\": \"admin1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login-customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login-customer"
+							]
+						},
+						"description": "<u><b>API STRUCRUE :</b></u>\n\n[http://localhost:8080/login-customer](http://localhost:8080/login-customer)"
+					},
+					"response": []
+				}
+			],
+			"description": "### **APIS for viewing and editing the Customer data**"
+		},
+		{
+			"name": "Staff",
+			"item": [
+				{
+					"name": "all-staff-details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/all-staff-details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"all-staff-details"
+							]
+						},
+						"description": "<u><b>API STRUCRUE :</b></u>\n\n[http://localhost:8080/all-staff-details](http://localhost:8080/all-staff-details)"
+					},
+					"response": []
+				},
+				{
+					"name": "register-staff",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"staff\",\n    \"lastName\": \"staff\",\n    \"password\": \"staff\",\n    \"mail\": \"staff\",\n    \"position\": \"Manager\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/register-staff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"register-staff"
+							]
+						},
+						"description": "[http://localhost:8080/register-staff](http://localhost:8080/register-staff)"
+					},
+					"response": []
+				},
+				{
+					"name": "staff-login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"mail\": \"staff\",\n    \"password\": \"staff\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login-staff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login-staff"
+							]
+						},
+						"description": "<u><b>API STRUCRUE :</b></u>\n\n[http://localhost:8080/login-staff](http://localhost:8080/login-staff)"
+					},
+					"response": []
+				}
+			],
+			"description": "### **APIS for viewing and editing the Hotel Staff data**"
+		},
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "add-room",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"staffId\": 1, \n    \"roomNo\": \"101\",  \n    \"roomType\": \"Deluxe\",\n    \"roomStatus\": \"Available\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/add-room",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add-room"
+							]
+						},
+						"description": "<u><b>API STRUCRUE :</b></u>\n\n[http://localhost:8080/add-room](http://localhost:8080/add-room)"
+					},
+					"response": []
+				},
+				{
+					"name": "all-room-details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/all-room-details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"all-room-details"
+							]
+						},
+						"description": "<u><b>API STRUCRUE :</b></u>\n\nhttp://localhost:8080/all-room-details"
+					},
+					"response": []
+				}
+			],
+			"description": "### APIS for viewing and editing the Room details"
+		},
+		{
+			"name": "Bookings",
+			"item": [
+				{
+					"name": "all-booking-details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/all-booking-details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"all-booking-details"
+							]
+						},
+						"description": "<u><b>API STRUCRUE :</b></u>\n\nhttp://localhost:8080/all-booking-details"
+					},
+					"response": []
+				},
+				{
+					"name": "make-booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerId\": 1,\n    \"roomId\": 1,\n    \"checkInDate\": \"2024-04-10 12:00:00\",\n    \"isCanceled\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/make-booking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"make-booking"
+							]
+						},
+						"description": "<u><b>API STRUCRUE :</b></u>\n\n[http://localhost:8080/make-booking](http://localhost:8080/make-booking)"
+					},
+					"response": []
+				},
+				{
+					"name": "cancel-booking",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bookingId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cancel-booking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cancel-booking"
+							]
+						},
+						"description": "<u><b>API STRUCRUE :</b></u>\n\n[http://localhost:8080/cancel-booking](http://localhost:8080/cancel-booking/{booking_id})"
+					},
+					"response": []
+				},
+				{
+					"name": "update-checkout",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bookingId\": 1,\n    \"checkOutDate\": \"2024-04-10 12:00:00\" // Example check-out date and time\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/update-checkout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"update-checkout"
+							]
+						},
+						"description": "<u><b>API STRUCRUE :</b></u>\n\n[http://localhost:8080/update-checkout](http://localhost:8080/update-checkout/{booking_id}/{check_out_date})"
+					},
+					"response": []
+				},
+				{
+					"name": "my-booking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/my-booking/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"my-booking",
+								"1"
+							]
+						},
+						"description": "<u><b>API STRUCRUE :</b></u>\n\n[http://127.0.0.1:8080/my-booking/{customer_id}](http://127.0.0.1:8080/my-booking/%7Bcustomer_id%7D)"
+					},
+					"response": []
+				}
+			],
+			"description": "### **APIS for viewing and editing the Booking details**"
+		}
+	]
+}
